@@ -43,7 +43,7 @@ def led_callback(client, led_data, led_msg):
 
 
 
-if (__name__=='__main__')
+if (__name__=="__main__")
 	client = mqtt.Client()
 	client.on.message = on_message
 	clien.on.connect = on_connect
