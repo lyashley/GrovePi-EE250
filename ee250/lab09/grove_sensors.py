@@ -74,13 +74,13 @@ def on_connect(client, userdata, flagas, rc):
 def on_message(client, userdata, msg):
 	print("on_message:" + msg.topic + " " + str(msg.payload, "utf-8"))
 
-def lcd_callback(client, lcd_data, lcd_msg)
+def lcd_callback(client, lcd_data, lcd_msg):
 	lcd_data = str(lcd_msg.payload, "utf-8")
 
 	setRGB(0, 255, 0)
 	setText(lcd_data)
 
-def led_callback(client, led_data, led_msg)
+def led_callback(client, led_data, led_msg):
 	led_data = str(msg, payload, "utf-8")
 
 	if (led_data = "LED_toggle"):
