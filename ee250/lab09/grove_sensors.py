@@ -45,8 +45,8 @@ def led_callback(client, led_data, led_msg):
 
 if __name__== '__main__':
 	client = mqtt.Client()
-	client.on.message = on_message
-	clien.on.connect = on_connect
+	client.on_message = on_message
+	clien.on_connect = on_connect
 	client.connect(host="eclipse.usc.edu", port = 11000, keepalive = 60)
 	client.loop_start()
 
