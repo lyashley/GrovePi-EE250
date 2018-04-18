@@ -83,7 +83,7 @@ def lcd_callback(client, lcd_data, lcd_msg):
 def led_callback(client, led_data, led_msg):
 	led_data = str(msg, payload, "utf-8")
 
-	if (led_data = "LED_toggle"):
+	if (led_data == "LED_toggle"):
 			if (digitalRead(led)):
 				digitalWrite(led,0)
 			else:
