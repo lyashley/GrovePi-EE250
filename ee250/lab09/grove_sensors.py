@@ -13,7 +13,7 @@ sensor = 3
 # Connect the Grove LED to digital port D4
 led = 4
 
-pinMode(led,"OUTPUT")
+
 
 def on_connect(client, userdata, flagas, rc):
 	print("Connected to server(i.e. broker) with result code" + str(rc))
