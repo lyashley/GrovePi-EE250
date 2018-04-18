@@ -54,7 +54,7 @@ if __name__== '__main__':
 	    
 	    	time.sleep(1)
 
-	    	[temp,hum] = dht(sensor,1)
+	    	[ temp,hum ] = dht(sensor,1)
 
 	    	t = str(temp)
 	    	h = str(hum)
