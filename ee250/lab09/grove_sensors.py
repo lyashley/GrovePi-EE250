@@ -48,7 +48,7 @@ if __name__== __main__:
 	client.on.message = on_message
 	clien.on.connect = on_connect
 	client.connect(host="eclipse.usc.edu", port = 11000, keepalive = 60)
-	client loop_start()
+	client.loop_start()
 
 	while True:
 	    
