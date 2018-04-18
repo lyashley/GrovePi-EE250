@@ -1,7 +1,7 @@
 import time
 import sys
-import grovepi
-import grove_rgb_lcd
+from grovepi import *
+from grove_rgb_lcd import *
 import paho.mqtt.client as mqtt
 
 sys.path.append('../..Software/Python/')
