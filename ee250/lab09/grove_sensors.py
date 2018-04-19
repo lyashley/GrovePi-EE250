@@ -91,5 +91,5 @@ if __name__ == '__main__':
 		#publish the humidity data
 		client.publish("anrg-pi8/humidity", h)
 
-		print("\nTemperature: " + t + "\nHumidity: ")
+		print("\nTemperature: " + t + "\nHumidity: " + h)
 
