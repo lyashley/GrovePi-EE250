@@ -51,14 +51,14 @@ if __name__ == '__main__':
 	while True:
 
 			time.sleep(1)
-	    
-	    	[ temp,hum ] = dht(dht_sensor,1)
+		
+			[ temp,hum ] = dht(dht_sensor,1)
 
-	    	t = str(temp)
-	    	h = str(hum)
+			t = str(temp)
+			h = str(hum)
 
-	    	client.publish("anrg-pi8/temperature", t)
-	    	client.publish("anrg-pi8/humidity", h)
+			client.publish("anrg-pi8/temperature", t)
+			client.publish("anrg-pi8/humidity", h)
 
 
 
