@@ -17,10 +17,10 @@ led = 4
 
 def on_connect(client, userdata, flagas, rc):
 	print("Connected to server(i.e. broker) with result code" + str(rc))
-	client.subscriber("anrg-pi8/led")
+	client.subscribe("anrg-pi8/led")
 	client.message_callback_add("anrg-pi8/led", led_callback)
 
-	client.subscriber("anrg-pi8/lcd")
+	client.subscribe("anrg-pi8/lcd")
 	client.message_callback_add("anrg-pi8/lcd", lcd_callback)
 
 def on_message(client, userdata, msg):
