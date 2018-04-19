@@ -41,9 +41,9 @@ def led_callback(client, data, msg):
     data = str(msg.payload, "utf-8")
     
     if (data == "LED_toggle"):
-    	print("\nLED_toggle")
+		print("\nLED_toggle")
 
-        if (digitalRead(led)): #if the LED is currently on
+		if (digitalRead(led)): #if the LED is currently on
             digitalWrite(led,0) #turn the LED off
         else:
             digitalWrite(led,1) #else, turn the LED on
