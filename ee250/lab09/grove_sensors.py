@@ -23,6 +23,7 @@ def led_callback(client, led_data, led_msg):
 	led_data = str(msg, payload, "utf-8")
 
 	if (led_data == "LED_toggle"):
+			print("LED toggle \n")
 			if (digitalRead(led)):
 				digitalWrite(led,0)
 			else:
@@ -60,7 +61,7 @@ if __name__ == '__main__':
 			client.publish("anrg-pi8/temperature", t)
 			client.publish("anrg-pi8/humidity", h)
 
-			print("Temperature:" + t + "\n Humidity: " + h)
+			print("Temperature:" + t + "\nHumidity: " + h)
 
 
 
