@@ -60,5 +60,7 @@ if __name__ == '__main__':
 			client.publish("anrg-pi8/temperature", t)
 			client.publish("anrg-pi8/humidity", h)
 
+			print("Temperature:" + t + "\n Humidity: " + h)
+
 
 
