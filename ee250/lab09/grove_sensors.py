@@ -41,6 +41,7 @@ def led_callback(client, data, msg):
     data = str(msg.payload, "utf-8")
     
     if (data == "LED_toggle"):
+    	print("\nLED_toggle")
 
         if (digitalRead(led)): #if the LED is currently on
             digitalWrite(led,0) #turn the LED off
@@ -51,8 +52,8 @@ def on_connect(client, userdata, flags, rc):
     print("Connected to server (i.e., broker) with result code "+str(rc))
 
     #subscribe to topics of interest here
-    client.subscribe("anrg-pi5/led")
-    client.subscribe("anrg-pi5/lcd")
+    client.subscribe("anrg-pi8/led")
+    client.subscribe("anrg-pi8/lcd")
 
     #add my custom callbacks:
     client.message_callback_add("anrg-pi8/led", led_callback)
@@ -90,4 +91,6 @@ if __name__ == '__main__':
 
         #publish the humidity data
         client.publish("anrg-pi8/humidity", h)
+
+        print("\nTemperature: " + t + "\nHumidity: " + h)
 
