@@ -41,7 +41,7 @@ def on_message(client, userdata, msg):
 
 
 
-if __name__== '__main__':
+if __name__ == '__main__':
 	client = mqtt.Client()
 	client.on_message = on_message
 	client.on_connect = on_connect
