@@ -40,8 +40,9 @@ def led_callback(client, data, msg):
 	#convert the data so that the if statement will be executed
 	data = str(msg.payload, "utf-8")
 	
+	print("LED_toggle")
 	if (data == "LED_toggle"):
-		print("LED_toggle")
+		print("Toggling now")
 		if (digitalRead(led)): #if the LED is currently on
 			digitalWrite(led,0) #turn the LED off
 		else:
