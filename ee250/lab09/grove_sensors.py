@@ -33,8 +33,8 @@ def on_connect(client, userdata, flagas, rc):
 	client.subscribe("anrg-pi8/led")
 	client.subscribe("anrg-pi8/lcd")
 	
-	client.message_callback_add("anrg-pi8/led", led_callback
-	client.message_callback_add("anrg-pi8/lcd", lcd_callback)
+	client.message_callback_add("anrg-pi8/led", led_callback)
+    client.message_callback_add("anrg-pi8/lcd", lcd_callback)
 
 def on_message(client, userdata, msg):
 	print("on_message:" + msg.topic + " " + str(msg.payload, "utf-8"))
