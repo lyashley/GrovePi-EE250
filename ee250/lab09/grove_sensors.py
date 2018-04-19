@@ -4,7 +4,7 @@ from grovepi import *
 from grove_rgb_lcd import *
 import paho.mqtt.client as mqtt
 
-sys.path.append('../..Software/Python/')
+sys.path.append('../../Software/Python/')
 
 # Connect the Grove Temperature Sensor to analog port A0
 # SIG,NC,VCC,GND
